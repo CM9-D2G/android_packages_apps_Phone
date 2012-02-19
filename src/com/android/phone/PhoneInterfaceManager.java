@@ -281,7 +281,6 @@ public class PhoneInterfaceManager extends ITelephony.Stub {
         mApp.startActivity(intent);
     }
 
-<<<<<<< HEAD
     public void toggleLTE(boolean on) {	
         int network = -1;	
         if (on) {	
@@ -293,19 +292,6 @@ public class PhoneInterfaceManager extends ITelephony.Stub {
                 mMainThreadHandler.obtainMessage(CMD_TOGGLE_LTE));	
         Settings.Secure.putInt(mApp.getContentResolver(),	
                 Settings.Secure.PREFERRED_NETWORK_MODE, network);	
-=======
-    public void toggleLTE(boolean on) {
-        int network = -1;
-        if (on) {
-            network = Phone.NT_MODE_GLOBAL;
-        } else {
-            network = Phone.NT_MODE_CDMA;
-        }
-        mPhone.setPreferredNetworkType(network,
-                mMainThreadHandler.obtainMessage(CMD_TOGGLE_LTE));
-        android.provider.Settings.Secure.putInt(mApp.getContentResolver(),
-                android.provider.Settings.Secure.PREFERRED_NETWORK_MODE, network);
->>>>>>> 9c46c4504dd4dda396ad8cd77af07fff41b0a542
     }
 
     private boolean showCallScreenInternal(boolean specifyInitialDialpadState,
