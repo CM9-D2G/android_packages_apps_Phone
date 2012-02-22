@@ -21,7 +21,7 @@
          EVENT_SIM_NETWORK_LOCKED events from the Sim.  If true, this will
          prevent the IccNetworkDepersonalizationPanel from being shown,
          and effectively disable the "Sim network lock" feature. -->
-    <bool name="ignore_sim_network_locked_events">false</bool>
+    <bool name="ignore_sim_network_locked_events">true</bool>
 
     <!-- Flag indicating whether the Phone app should provide
          a "Dismiss" button on the SIM network unlock screen.
@@ -51,7 +51,7 @@
     <integer name="OtaPlaySuccessFailureTone">0</integer>
 
     <!-- Flag indicating if the phone is a world phone -->
-    <bool name="world_phone">false</bool>
+    <bool name="world_phone">true</bool>
 
     <!-- If true, enable vibration (haptic feedback) for key presses
          in the EmergencyDialer activity. The pattern is set on a
