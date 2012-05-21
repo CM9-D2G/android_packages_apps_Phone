@@ -1904,7 +1904,6 @@ public class PhoneUtils {
             audioManager.setMicrophoneMute(muted);
         } else {
             if (DBG) log("setMuteInternal: using phone.setMute(" + muted + ")...");
-            phone.setMute(!muted);
             phone.setMute(muted);
         }
         app.notificationMgr.updateMuteNotification();
