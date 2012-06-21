@@ -1895,13 +1895,17 @@ public class PhoneUtils {
     private static void setMuteInternal(Phone phone, boolean muted) {
         final PhoneApp app = PhoneApp.getInstance();
         Context context = phone.getContext();
+        int currentAudioMode;
         boolean routeToAudioManager =
             context.getResources().getBoolean(R.bool.send_mic_mute_to_AudioManager);
         if (routeToAudioManager) {
             AudioManager audioManager =
                 (AudioManager) phone.getContext().getSystemService(Context.AUDIO_SERVICE);
             if (DBG) log("setMuteInternal: using setMicrophoneMute(" + muted + ")...");
+            currentAudioMode = audioManager.getMode()
+            audioManager.setMode(AudioManager.MODE_IN_CALL);
             audioManager.setMicrophoneMute(muted);
+            audioManager.setMode(currentAudioMode);
         } else {
             if (DBG) log("setMuteInternal: using phone.setMute(" + muted + ")...");
             phone.setMute(muted);
