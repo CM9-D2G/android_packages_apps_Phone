@@ -1902,7 +1902,7 @@ public class PhoneUtils {
             AudioManager audioManager =
                 (AudioManager) phone.getContext().getSystemService(Context.AUDIO_SERVICE);
             if (DBG) log("setMuteInternal: using setMicrophoneMute(" + muted + ")...");
-            currentAudioMode = audioManager.getMode()
+            currentAudioMode = audioManager.getMode();
             audioManager.setMode(AudioManager.MODE_IN_CALL);
             audioManager.setMicrophoneMute(muted);
             audioManager.setMode(currentAudioMode);
