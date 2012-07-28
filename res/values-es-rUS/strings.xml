@@ -14,8 +14,7 @@
      limitations under the License.
  -->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="phoneAppLabel" product="tablet" msgid="8576272342240415145">"Datos de celulares"</string>
     <string name="phoneAppLabel" product="default" msgid="906161039445636857">"Teléfono"</string>
     <string name="emergencyDialerIconLabel" msgid="7812140032168171053">"Marcador de emergencia"</string>
@@ -101,6 +100,10 @@
     <string name="settings_label" msgid="3876743539816984008">"Configuración de red"</string>
     <string name="voicemail" msgid="8693759337917898954">"Correo de voz"</string>
     <string name="voicemail_abbreviated" msgid="2215592488517217448">"Correo de voz:"</string>
+<!-- May Need MSGID added to work in Lang Files and Translation-->
+    <string name="mwi_notification_title">Indicador de mensaje de espera</string>
+    <string name="mwi_notification_summary">Mostrar mensajes de correo de voz indicador de espera de las notificaciones/string>
+
     <string name="networks" msgid="8873030692174541976">"Operadores de red"</string>
     <string name="call_settings" msgid="6112441768261754562">"Configuración de llamada"</string>
     <string name="additional_gsm_call_settings" msgid="1391795981938800617">"Configuración adicional"</string>
@@ -156,6 +159,13 @@
     <item msgid="7876195870037833661">"Ocultar número"</item>
     <item msgid="1108394741608734023">"Mostrar número"</item>
   </string-array>
+<!-- May Need MSGID added to work in Lang Files and translation-->
+    <string-array name="clir_values">
+        <item><xliff:g>Predeterminado</xliff:g></item>
+        <item><xliff:g>Ocultar</xliff:g></item>
+        <item><xliff:g>Mostrar</xliff:g></item>
+    </string-array>
+
     <string name="vm_save_number" msgid="4579969432544566719">"Guardar número de correo de voz"</string>
     <string name="vm_changed" msgid="380744030726254139">"Número de correo de voz cambiado."</string>
     <string name="vm_change_failed" msgid="6912718596496220653">"No se ha realizado correctamente el cambio del buzón de voz. "\n"Comunícate con tu proveedor si el problema continúa."</string>
@@ -191,7 +201,16 @@
     <string name="preferred_network_mode_cdma_only_summary" msgid="1309770926198634150">"Modo de red preferido: solo CDMA"</string>
     <string name="preferred_network_mode_evdo_only_summary" msgid="8472220691721269155">"Modo de red preferido: solo EvDo"</string>
     <string name="preferred_network_mode_lte_cdma_summary" msgid="3722647806454528426">"Modo de red preferido: LTE / CDMA"</string>
+	<string name="preferred_network_mode_lte_gsm_summary">"Modo de red preferido: LTE / WCDMA / GSM"</string>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="preferred_network_mode_lte_cdma_evdo_summary">Modo de red preferido: LTE / CDMA / EvDo</string>
+    <string name="preferred_network_mode_lte_cdma_evdo_gsm_wcdma_summary">Modo de red preferido: LTE / CMDA / EvDo / GSM / WCDMA</string>
+<!-- May Need MSGID added to work in Lang Files -->
   <string-array name="preferred_network_mode_choices">
+	<item>Solo LTE</item>
+	<item>LTE / CMDA / EvDo / GSM / WCDMA</item>
+	<item>LTE / WCDMA / GSM</item>
+	<item>LTE / CDMA / EvDo</item>
     <item msgid="5886604709726177211">"LTE / CDMA"</item>
     <item msgid="3273348576277144124">"EvDo solamente"</item>
     <item msgid="454610224530856274">"CDMA sin EvDo"</item>
@@ -201,15 +220,59 @@
     <item msgid="5714714953966979187">"GSM solamente"</item>
     <item msgid="4775796025725908913">"GSM/WCDMA preferidas"</item>
   </string-array>
+<!-- More Non-Translatable may need removing in some language Files 
+  <string-array name="preferred_network_mode_values"  translatable="false">
+	<item>"11"</item>
+	<item>"10"</item>
+	<item>"9"</item>
+	<item>"8"</item>
+	<item>"7"</item>
+	<item>"6"</item>
+	<item>"5"</item>
+	<item>"4"</item>
+	<item>"3"</item>
+	<item>"2"</item>
+	<item>"1"</item>
+	<item>"0"</item>
+  </string-array>
+-->
+<!-- May Need MSGID added to work in Lang Files -->
   <string-array name="preferred_network_mode_choices_lte">
+	<item>LTE ONLY</item>
+	<item>LTE / CMDA / EvDo / GSM / WCDMA</item>
     <item msgid="7345284701413565429">"LTE / CDMA"</item>
     <item msgid="5541716989029928208">"CDMA"</item>
   </string-array>
+
+<!-- Some of these are Non-Translatable and may need removing in some Lang files 
+    <string-array name="preferred_network_mode_values_lte" translatable="false">
+        <item>"11"</item>
+        <item>"10"</item>
+        <item>"7"</item>
+        <item>"4"</item>
+    </string-array>
+-->
+<!-- May Need MSGID added to work in Lang Files -->
+  <string-array name="preferred_network_mode_choices_lte_gsm">
+    <item>"LTE / GSM"</item>
+    <item>"GSM"</item>
+  </string-array>
+<!-- Some of these are Non-Translatable and may need removing in some Lang files 
+    <string-array name="preferred_network_mode_values_lte_gsm" translatable="false">
+        <item>"9"</item>
+        <item>"0"</item>
+    </string-array>
+-->
     <string name="data_enabled" msgid="5972538663568715366">"Usar paquete de datos"</string>
     <string name="data_enable_summary" msgid="5022018967714633874">"Activar acceso a datos para red móvil"</string>
     <string name="roaming" msgid="8871412572928323707">"Roaming de datos"</string>
     <string name="roaming_enable" msgid="7331106985174381987">"Conectar a servicios de datos en roaming"</string>
     <string name="roaming_disable" msgid="1843417228755568110">"Conectar a servicios de datos en roaming"</string>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="national_roaming">"Datos en itinerancia nacional"</string>
+    <string name="national_roaming_enable">"Establecer conexión con servicios de datos en itinerancia nacional"</string>
+    <string name="national_roaming_disable">"Establecer conexión con servicios de datos en itinerancia nacional"</string>
+
     <string name="roaming_reenable_message" msgid="6973894869473170666">"Has perdido la conectividad de los datos porque has dejado la red doméstica con roaming de datos desactivado."</string>
     <string name="roaming_warning" msgid="7820963598559553967">"¿Deseas permitir el roaming de datos? Ten en cuenta que podrás incurrir en gastos significativos."</string>
     <string name="gsm_umts_options" msgid="6538311689850981686">"Opciones de GSM/UMTS"</string>
@@ -221,10 +284,13 @@
     <string name="throttle_rate" msgid="4710388992676803508">"Política de velocidad de transferencia de datos"</string>
     <string name="throttle_help" msgid="243651091785169900">"Más información"</string>
     <string name="throttle_status_subtext" msgid="1657318943142085170">"<xliff:g id="USED_0">%1$s</xliff:g> (<xliff:g id="USED_1">%2$d</xliff:g>٪) de <xliff:g id="USED_2">%3$s</xliff:g> del período máximo "\n"El próximo período comienza en <xliff:g id="USED_3">%4$d</xliff:g> días (<xliff:g id="USED_4">%5$s</xliff:g>)."</string>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="throttle_status_subtext"><xliff:g id="used">%1$s</xliff:g> (<xliff:g id="used">%2$d</xliff:g>\u066A) de <xliff:g id="used">%3$s</xliff:g> período máximo\nEl siguiente período se inicia en <xliff:g id="used">%4$d</xliff:g> días (<xliff:g id="used">%5$s</xliff:g>)</string>
     <string name="throttle_data_usage_subtext" msgid="6029276011123694701">"<xliff:g id="USED_0">%1$s</xliff:g> (<xliff:g id="USED_1">%2$d</xliff:g>٪) de <xliff:g id="USED_2">%3$s</xliff:g> máximo del período"</string>
     <string name="throttle_data_rate_reduced_subtext" msgid="7492763592720107737">"<xliff:g id="USED_0">%1$s</xliff:g>máximo excedido"\n"La velocidad de la transferencia de datos se redujo a <xliff:g id="USED_1">%2$d</xliff:g> kb/seg."</string>
     <string name="throttle_time_frame_subtext" msgid="7732763021560399960">"<xliff:g id="USED_0">%1$d</xliff:g>% del ciclo transcurrido"\n"El siguiente período comienza en <xliff:g id="USED_1">%2$d</xliff:g> días (<xliff:g id="USED_2">%3$s</xliff:g>)."</string>
     <string name="throttle_rate_subtext" msgid="2149102656120726855">"La velocidad de la transferencia de datos se reduce a <xliff:g id="USED">%1$d</xliff:g> Kb/seg. si se excede el límite de utilización de datos."</string>
+
     <string name="throttle_help_subtext" msgid="5217706521499010816">"Más información acerca de la política de utilización de datos de la red móvil de tu proveedor de servicios de telefonía móvil"</string>
     <string name="cdma_cell_broadcast_sms" msgid="7898475142527341808">"SMS de emisión celular"</string>
     <string name="cell_broadcast_sms" msgid="5584192824053625842">"SMS de emisión celular"</string>
@@ -338,6 +404,13 @@
     <item msgid="176474317493999285">"Página principal solamente"</item>
     <item msgid="1205664026446156265">"Automático"</item>
   </string-array>
+<!-- More Non-Translatable may need removing in some language Files 
+    <string-array name="cdma_system_select_values" translatable="false">
+        <item>"0"</item>
+        <item>"2"</item>
+    </string-array>
+-->
+    <!-- CDMA Options strings -->
     <string name="cdma_roaming_mode_title" msgid="6366737033053855198">"Modo de roaming CDMA"</string>
     <string name="cdma_roaming_mode_summary" msgid="8604713111805562261">"Cambiar el modo de roaming de CDMA"</string>
     <string name="cdma_roaming_mode_dialogtitle" msgid="1802896889172094947">"Modo de roaming CDMA"</string>
@@ -453,6 +526,11 @@
     <string name="doneButton" msgid="2859593360997984240">"Finalizado"</string>
     <string name="caller_manage_header" msgid="3231519674734638786">"Llamada en conferencia <xliff:g id="CONF_CALL_TIME">%s</xliff:g>"</string>
     <string name="caller_manage_manage_done_text" msgid="8093934725536733856">"Volver a la llamada"</string>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="fake_phone_activity_phoneNumber_text">"(650) 555-1234"</string>
+    <string name="fake_phone_activity_infoText_text">"Número de teléfono entrante"</string>
+    <string name="fake_phone_activity_placeCall_text">"Llamada entrante falsa"</string>
+
     <string name="sim_missing_continueView_text" msgid="4199689081742026077">"Continuar sin tarjeta SIM"</string>
     <string name="sim_missing_msg_text" msgid="6803619600564142188">"No se encontró tarjeta SIM. Coloca una en el dispositivo."</string>
     <string name="sim_unlock_dismiss_text" msgid="8292343981739813597">"Descartar"</string>
@@ -530,6 +608,14 @@
     <item msgid="1937509904407445684">"TTY HCO"</item>
     <item msgid="5644925873488772224">"TTY VCO"</item>
   </string-array>
+<!-- More Non-Translatable may need removing in some language Files 
+    <string-array name="tty_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+-->
     <string name="eri_text_label" msgid="4326942349915331461">"Texto de ERI"</string>
     <string name="dtmf_tones_title" msgid="3866923093113274152">"Tonos de DTMF"</string>
     <string name="dtmf_tones_summary" msgid="3351820372864020331">"Establecer la longitud de los tonos de DTMF"</string>
@@ -537,6 +623,12 @@
     <item msgid="899650777817315681">"Normal"</item>
     <item msgid="2883365539347850535">"Largo"</item>
   </string-array>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string-array name="dtmf_tone_values">
+       <item>0</item>
+       <item>1</item>
+    </string-array>
+
     <string name="network_message" msgid="5673682885938122239">"Mensaje de red"</string>
     <string name="ota_title_activate" msgid="8616918561356194398">"Activar tu teléfono"</string>
     <string name="ota_touch_activate" msgid="6553212803262586244">"Es necesario realizar una llamada especial para activar tu servicio de teléfono."\n\n"Luego de presionar \"Activar\", escucha las instrucciones suministradas para activar tu teléfono."</string>
@@ -560,6 +652,8 @@
     <string name="ota_try_again" msgid="7685477206465902290">"Vuelve a intentarlo"</string>
     <string name="ota_next" msgid="3904945374358235910">"Siguiente"</string>
     <string name="ota_back" msgid="2190038043403850052">"Atrás"</string>
+
+    <!-- Emergency Callback Mode (ECM) -->
     <string name="ecm_exit_dialog" msgid="4448531867763097533">"EcmExitDialog"</string>
     <string name="phone_entered_ecm_text" msgid="6266424252578731203">"Modo de devolución de llamada de emergencia ingresado"</string>
     <string name="phone_in_ecm_notification_title" msgid="3226896828951687085">"Modo de devolución de llamada de emergencia"</string>
@@ -581,12 +675,19 @@
     <string name="alert_dialog_yes" msgid="6674268047820703974">"Sí"</string>
     <string name="alert_dialog_no" msgid="1476091437797628703">"No"</string>
     <string name="alert_dialog_dismiss" msgid="2491494287075907171">"Descartar"</string>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="absent_num">NÚMERO DE AUSENTE</string>
+
     <string name="voicemail_settings" msgid="2288633492587133022">"Config. de correo de voz"</string>
     <string name="voicemail_number_not_set" msgid="1604580506447265808">"&lt;no establecido&gt;"</string>
     <string name="voicemail_provider" msgid="6299679757491942924">"Serv. de correo de voz"</string>
     <string name="voicemail_settings_for" msgid="9018656268027893088">"Configuraciones para <xliff:g id="PROVIDER_NAME">%s</xliff:g>"</string>
     <string name="other_settings" msgid="3672912580359716394">"Otras configuraciones de llamada"</string>
     <string name="dial_button_label" msgid="5551611636419190229">"Marcar"</string>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="dialer_ui_settings_title">"Ajustes de marcación"</string>
+    <string name="dialer_ui_settings_summary">"Ajustes del teclado de marcación"</string>
+
     <string name="calling_via_template" msgid="7374498518104190489">"Llamar mediante ^1"\n<b>"^2"</b></string>
     <string name="slide_to_answer" msgid="255903188611244476">"Arrastrar a la derecha para responder"</string>
     <string name="slide_to_silence" msgid="2224982696981131553">"Arrastra a la izquierda para silenciar el timbre"</string>
@@ -599,6 +700,10 @@
     <string name="contactPhoto" msgid="4713193418046639466">"foto de contacto"</string>
     <string name="goPrivate" msgid="865837794424530980">"pasar a modo privado"</string>
     <string name="selectContact" msgid="781975788478987237">"seleccionar contacto"</string>
+
+
+    <!-- Start of SIP related strings defined from here. -->
+
     <string name="sip_settings" msgid="6699045718560859691">"Configuraciones de llamada de Internet"</string>
     <string name="sip_accounts" msgid="2097054001288457163">"Cuentas para llamadas por Internet (SIP)"</string>
     <string name="sip_accounts_title" msgid="1212889069281054570">"Cuentas"</string>
@@ -671,6 +776,10 @@
     <string name="default_preference_summary" msgid="868766740121667450">"&lt;No establecido&gt;"</string>
     <string name="display_name_summary" msgid="8636377460518225523">"&lt;Igual que el nombre de usuario&gt;"</string>
     <string name="optional_summary" msgid="1464058793789832411">"&lt;Opcional&gt;"</string>
+<!-- More Non-Translatable may need removing in some language Files 
+    <string translatable="false" name="default_port">5060</string>
+    <string translatable="false" name="default_transport">UDP</string>
+-->
     <string name="advanced_settings_show" msgid="4668880308290857597">"▷ Tocar para mostrar todo"</string>
     <string name="advanced_settings_hide" msgid="217398292824758079">"▽Tocar para ocultar todo"</string>
     <string name="empty_alert" msgid="8177828109581557940">"<xliff:g id="INPUT_FIELD_NAME">%s</xliff:g> requerido, no se puede dejar en blanco"</string>
@@ -682,6 +791,23 @@
     <string name="no_voip" msgid="8901474054537199865">"No admite llamadas por Internet"</string>
     <string name="sip_system_decide" msgid="368030746310423471">"Automático"</string>
     <string name="sip_always_send_keepalive" msgid="8192080724632877132">"Enviar mensajes siempre"</string>
+<!-- More Non-Translatable may need removing in some language Files 
+    <string translatable="false" name="sip_always">SIP_ALWAYS</string>
+    <string translatable="false" name="sip_address_only">SIP_ADDRESS_ONLY</string>
+    <string translatable="false" name="sip_ask_me_each_time">SIP_ASK_ME_EACH_TIME</string>
+    <string translatable="false" name="domain_address">SipDomain</string>
+    <string translatable="false" name="username">UserName</string>
+    <string translatable="false" name="password">Password</string>
+    <string translatable="false" name="display_name">DisplayName</string>
+    <string translatable="false" name="proxy_address">ProxyAddress</string>
+    <string translatable="false" name="port">Port</string>
+    <string translatable="false" name="transport">Protocol</string>
+    <string translatable="false" name="send_keepalive">SendKeepAlive</string>
+    <string translatable="false" name="auto_registration">AutoRegistration</string>
+    <string translatable="false" name="set_primary">SetPrimary</string>
+    <string translatable="false" name="advanced_settings_container">advanced settings container</string>
+    <string translatable="false" name="auth_username">AuthUserName</string>
+-->
     <string name="not_voice_capable" msgid="2739898841461577811">"No admite llamadas de voz."</string>
     <string name="respond_via_sms_canned_response_1" msgid="2461606462788380215">"No puedo hablar ahora. ¿Qué pasa?"</string>
     <string name="respond_via_sms_canned_response_2" msgid="4074450431532859214">"Te llamo enseguida."</string>
@@ -713,6 +839,12 @@
     <string name="description_target_answer" msgid="7205604197797472471">"Responder"</string>
     <string name="description_target_send_sms" msgid="2098326025587950144">"Enviar un mensaje SMS"</string>
     <string name="description_target_decline" msgid="4789834364389731957">"Rechazar"</string>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="perm_change_mobile_network">Cambiar red (2G/3G)</string>
+    <string name="perm_change_mobile_network_desc">Las aplicaciones con este permiso, pueden en cualquier momento, cambiar entre datos 2G y 3G. 3G es rápido, consume mas batería, y puede costarte mas dinero.</string>
+
+    <string name="phone_number_label">"Mi número de teléfono"</string>
+    <string name="phone_number_summary">"Establecer el número de teléfono para este dispositivo"</string>
     <string name="voicemail_notification_vibrate_when_title" msgid="8361970092063604886">"Vibrar"</string>
     <string name="voicemail_notification_vibarte_when_dialog_title" msgid="5739583146522136440">"Vibrar"</string>
   <string-array name="voicemail_notification_vibrate_when_entries">
@@ -720,6 +852,15 @@
     <item msgid="1595097872875714252">"Sólo cuando esté en silencio"</item>
     <item msgid="1458182414036878616">"Nunca"</item>
   </string-array>
+<!-- More Non-Translatable may need removing in some language Files 
+    <string name="voicemail_notification_vibrate_when_default" translatable="false">never</string>
+    <string-array name="voicemail_notification_vibrate_when_values" translatable="false">
+        <item>always</item>
+        <item>silent</item>
+        <item>never</item>
+    </string-array>
+-->
+<!-- May Need MSGID added to work in Lang Files -->
     <string name="advanced_setting">Configuración Avanzada</string>
     <string name="vibrate_outgoing">Vibra al Contestar</string>
     <string name="vibrate_outgoing_sum">Vibra cuando contestan una llamada</string>
@@ -729,4 +870,14 @@
     <string name="vibrate_hangup_sum">Vibra cuando ha finalizado una llamada</string>
     <string name="vibrate_call_waiting">Vibrar en Llamada en Espera</string>
     <string name="vibrate_call_waiting_sum">Vibra al tener una Llamada en Espera</string>
+
+    <string name="noise_suppression_title">supresión de ruido</string>
+    <string name="noise_suppression_summary">Habilitar la supresión del ruido para las llamadas</string>
+
+    <string name="voice_quality_preferences_title">Voice quality</string>
+    <string name="voice_quality_summary">Voice profile is currently set to: %s</string>
+    <string name="voice_quality_entry_normal">Normal</string>
+    <string name="voice_quality_entry_clear">Borrar</string>
+    <string name="voice_quality_entry_crisp">Crujiente</string>
+    <string name="voice_quality_entry_bright">Brillante</string>
 </resources>
