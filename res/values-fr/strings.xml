@@ -101,8 +101,8 @@
     <string name="voicemail" msgid="8693759337917898954">"Messagerie vocale"</string>
     <string name="voicemail_abbreviated" msgid="2215592488517217448">"MV :"</string>
 <!-- May Need MSGID added to work in Lang Files and Translation-->
-    <string name="mwi_notification_title">Message Wait Indicator</string>
-    <string name="mwi_notification_summary">Show message wait indicator voicemail notifications</string>
+    <string name="mwi_notification_title">Indicateur d'attente des messages</string>
+    <string name="mwi_notification_summary">Afficher un message d'attente des notifications de messagerie vocale indicateurs</string>
 
     <string name="networks" msgid="8873030692174541976">"Opérateur de réseau"</string>
     <string name="call_settings" msgid="6112441768261754562">"Paramètres d\'appel"</string>
@@ -161,8 +161,8 @@
   </string-array>
 <!-- May Need MSGID added to work in Lang Files and translation-->
     <string-array name="clir_values">
-        <item><xliff:g>DEFAULT</xliff:g></item>
-        <item><xliff:g>HIDE</xliff:g></item>
+        <item><xliff:g>Défaut</xliff:g></item>
+        <item><xliff:g>Masquer</xliff:g></item>
         <item><xliff:g>SHOW</xliff:g></item>
     </string-array>
 
@@ -202,12 +202,12 @@
     <string name="preferred_network_mode_evdo_only_summary" msgid="8472220691721269155">"Mode réseau préféré : EvDo uniquement"</string>
     <string name="preferred_network_mode_lte_cdma_summary" msgid="3722647806454528426">"Mode réseau préféré : LTE/CDMA"</string>
 <!-- May Need MSGID added to work in Lang Files -->
-    <string name="preferred_network_mode_lte_gsm_summary">Preferred network mode: LTE / WCDMA / GSM</string>
-    <string name="preferred_network_mode_lte_cdma_evdo_summary">Preferred network mode: LTE / CDMA / EvDo</string>
-    <string name="preferred_network_mode_lte_cdma_evdo_gsm_wcdma_summary">Preferred network mode: LTE / CMDA / EvDo / GSM / WCDMA</string>
+    <string name="preferred_network_mode_lte_gsm_summary">Mode réseau préféré: LTE / WCDMA / GSM</string>
+    <string name="preferred_network_mode_lte_cdma_evdo_summary">Mode réseau préféré: LTE / CDMA / EvDo</string>
+    <string name="preferred_network_mode_lte_cdma_evdo_gsm_wcdma_summary">Mode réseau préféré: LTE / CMDA / EvDo / GSM / WCDMA</string>
 <!-- May Need MSGID added to work in Lang Files -->
   <string-array name="preferred_network_mode_choices">
-	<item>LTE ONLY</item>
+	<item>LTE uniquement</item>
 	<item>LTE / CMDA / EvDo / GSM / WCDMA</item>
 	<item>LTE / WCDMA / GSM</item>
 	<item>LTE / CDMA / EvDo</item>
@@ -238,7 +238,7 @@
 -->
 <!-- May Need MSGID added to work in Lang Files -->
   <string-array name="preferred_network_mode_choices_lte">
-	<item>LTE ONLY</item>
+	<item>LTE Uniquement</item>
 	<item>LTE / CMDA / EvDo / GSM / WCDMA</item>
     <item msgid="7345284701413565429">"LTE/CDMA"</item>
     <item msgid="5541716989029928208">"CDMA"</item>
@@ -530,8 +530,8 @@
     <string name="caller_manage_manage_done_text" msgid="8093934725536733856">"Retour à l\'appel"</string>
 <!-- May Need MSGID added to work in Lang Files -->
     <string name="fake_phone_activity_phoneNumber_text">(650) 555-1234</string>
-    <string name="fake_phone_activity_infoText_text">Incoming phone number</string>
-    <string name="fake_phone_activity_placeCall_text">Fake Incoming Call</string>
+    <string name="fake_phone_activity_infoText_text">Le numéro de téléphone entrant</string>
+    <string name="fake_phone_activity_placeCall_text">Faux appels entrants</string>
 
     <string name="sim_missing_continueView_text" msgid="4199689081742026077">"Continuer sans carte SIM"</string>
     <string name="sim_missing_msg_text" msgid="6803619600564142188">"Aucune carte SIM n\'a été trouvée. Insérez une carte SIM dans le téléphone."</string>
@@ -678,7 +678,7 @@
     <string name="alert_dialog_no" msgid="1476091437797628703">"Non"</string>
     <string name="alert_dialog_dismiss" msgid="2491494287075907171">"Ignorer"</string>
 <!-- May Need MSGID added to work in Lang Files -->
-    <string name="absent_num">ABSENT NUMBER</string>
+    <string name="absent_num">Nombre d'absents</string>
 
     <string name="voicemail_settings" msgid="2288633492587133022">"Messagerie vocale"</string>
     <string name="voicemail_number_not_set" msgid="1604580506447265808">"&lt;non défini&gt;"</string>
@@ -842,8 +842,8 @@
     <string name="description_target_send_sms" msgid="2098326025587950144">"Envoyer un SMS"</string>
     <string name="description_target_decline" msgid="4789834364389731957">"Refuser"</string>
 <!-- May Need MSGID added to work in Lang Files -->
-    <string name="perm_change_mobile_network">Change network (2G/3G)</string>
-    <string name="perm_change_mobile_network_desc">Application with this permission can, at any time, change between 2G data and 3G data. 3G is faster, consumes more battery, and can also cost you more money.</string>
+    <string name="perm_change_mobile_network">changer de réseau (2G/3G)</string>
+    <string name="perm_change_mobile_network_desc">Application avec cette autorisation peut, à tout moment, le changement entre les données 2G et 3G de données. 3G est plus rapide, consomme plus de batterie, et peut aussi vous coûter plus d'argent.</string>
 
     <string name="phone_number_label">"Mon numéro de téléphone"</string>
     <string name="phone_number_summary">"Régler le numéro d\'appel de ce téléphone"</string>
