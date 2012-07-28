@@ -874,10 +874,10 @@
     <string name="noise_suppression_title">supresión de ruido</string>
     <string name="noise_suppression_summary">Habilitar la supresión del ruido para las llamadas</string>
 
-    <string name="voice_quality_preferences_title">calidad de voz</string>
-    <string name="voice_quality_summary">Características de la voz está configurado para: %s</string>
+    <string name="voice_quality_preferences_title">Voice quality</string>
+    <string name="voice_quality_summary">Voice profile is currently set to: %s</string>
     <string name="voice_quality_entry_normal">Normal</string>
     <string name="voice_quality_entry_clear">Borrar</string>
-    <string name="voice_quality_entry_crisp">crujiente</string>
-    <string name="voice_quality_entry_bright">brillante</string>
+    <string name="voice_quality_entry_crisp">Crujiente</string>
+    <string name="voice_quality_entry_bright">Brillante</string>
 </resources>
