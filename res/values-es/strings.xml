@@ -101,8 +101,8 @@
 	<string name="voicemail" msgid="8693759337917898954">"Buzón de voz"</string>
 	<string name="voicemail_abbreviated" msgid="2215592488517217448">"Buzón de voz:"</string>
 <!-- May Need MSGID added to work in Lang Files and Translation-->
-    <string name="mwi_notification_title">Message Wait Indicator</string>
-    <string name="mwi_notification_summary">Show message wait indicator voicemail notifications</string>
+    <string name="mwi_notification_title">Indicador de mensaje de espera</string>
+    <string name="mwi_notification_summary">Mostrar mensajes de correo de voz indicador de espera de las notificaciones</string>
 
 	<string name="networks" msgid="8873030692174541976">"Operadores de red"</string>
 	<string name="call_settings" msgid="6112441768261754562">"Ajustes de llamadas"</string>
@@ -203,8 +203,8 @@
 	<string name="preferred_network_mode_lte_cdma_summary" msgid="3722647806454528426">"Modo de red preferido: LTE / CDMA"</string>
 	<string name="preferred_network_mode_lte_gsm_summary">"Modo de red preferido: LTE / WCDMA / GSM"</string>
 <!-- May Need MSGID added to work in Lang Files -->
-    <string name="preferred_network_mode_lte_cdma_evdo_summary">Preferred network mode: LTE / CDMA / EvDo</string>
-    <string name="preferred_network_mode_lte_cdma_evdo_gsm_wcdma_summary">Preferred network mode: LTE / CMDA / EvDo / GSM / WCDMA</string>
+    <string name="preferred_network_mode_lte_cdma_evdo_summary">Modo de red preferido: LTE / CDMA / EvDo</string>
+    <string name="preferred_network_mode_lte_cdma_evdo_gsm_wcdma_summary">Modo de red preferido: LTE / CMDA / EvDo / GSM / WCDMA</string>
 <!-- May Need MSGID added to work in Lang Files -->
   <string-array name="preferred_network_mode_choices">
 	<item>Solo LTE</item>
@@ -285,11 +285,11 @@
     <string name="throttle_help" msgid="243651091785169900">"Más información"</string>
     <string name="throttle_status_subtext"><xliff:g id="used">%1$s</xliff:g> (<xliff:g id="used">%2$d</xliff:g>\u066A) de <xliff:g id="used">%3$s</xliff:g> del máximo para el período.\nEl próximo período comienza en <xliff:g id="used">%4$d</xliff:g> días (<xliff:g id="used">%5$s</xliff:g>)</string>
 <!-- May Need MSGID added to work in Lang Files -->
-    <string name="throttle_status_subtext"><xliff:g id="used">%1$s</xliff:g> (<xliff:g id="used">%2$d</xliff:g>\u066A) of <xliff:g id="used">%3$s</xliff:g> period maximum\nNext period starts in <xliff:g id="used">%4$d</xliff:g> days (<xliff:g id="used">%5$s</xliff:g>)</string>
-    <string name="throttle_data_usage_subtext"><xliff:g id="used">%1$s</xliff:g> (<xliff:g id="used">%2$d</xliff:g>\u066A) of <xliff:g id="used">%3$s</xliff:g> period maximum</string>
-    <string name="throttle_data_rate_reduced_subtext"><xliff:g id="used">%1$s</xliff:g> maximum exceeded\nData rate reduced to <xliff:g id="used">%2$d</xliff:g> Kb/s</string>
-    <string name="throttle_time_frame_subtext"><xliff:g id="used">%1$d</xliff:g>\u066A of cycle elapsed\nNext period starts in <xliff:g id="used">%2$d</xliff:g> days (<xliff:g id="used">%3$s</xliff:g>)</string>
-    <string name="throttle_rate_subtext">Data rate reduced to <xliff:g id="used">%1$d</xliff:g> Kb/s if data use limit is exceeded</string>
+    <string name="throttle_status_subtext"><xliff:g id="used">%1$s</xliff:g> (<xliff:g id="used">%2$d</xliff:g>\u066A) de <xliff:g id="used">%3$s</xliff:g> período máximo\nEl siguiente período se inicia en <xliff:g id="used">%4$d</xliff:g> days (<xliff:g id="used">%5$s</xliff:g>)</string>
+    <string name="throttle_data_usage_subtext" msgid="6029276011123694701">"<xliff:g id="USED_0">%1$s</xliff:g> (<xliff:g id="USED_1">%2$d</xliff:g>٪) de <xliff:g id="USED_2">%3$s</xliff:g> máximo del período"</string>
+    <string name="throttle_data_rate_reduced_subtext" msgid="7492763592720107737">"<xliff:g id="USED_0">%1$s</xliff:g>máximo excedido"\n"La velocidad de la transferencia de datos se redujo a <xliff:g id="USED_1">%2$d</xliff:g> kb/seg."</string>
+    <string name="throttle_time_frame_subtext" msgid="7732763021560399960">"<xliff:g id="USED_0">%1$d</xliff:g>% del ciclo transcurrido"\n"El siguiente período comienza en <xliff:g id="USED_1">%2$d</xliff:g> días (<xliff:g id="USED_2">%3$s</xliff:g>)."</string>
+    <string name="throttle_rate_subtext" msgid="2149102656120726855">"La velocidad de la transferencia de datos se reduce a <xliff:g id="USED">%1$d</xliff:g> Kb/seg. si se excede el límite de utilización de datos."</string>
 
     <string name="throttle_help_subtext" msgid="5217706521499010816">"Más información sobre política de uso de datos móviles de tu operador"</string>
     <string name="cdma_cell_broadcast_sms" msgid="7898475142527341808">"SMS de difusión móvil"</string>
@@ -678,7 +678,7 @@
     <string name="alert_dialog_no" msgid="1476091437797628703">"No"</string>
     <string name="alert_dialog_dismiss" msgid="2491494287075907171">"Descartar"</string>
 <!-- May Need MSGID added to work in Lang Files -->
-    <string name="absent_num">ABSENT NUMBER</string>
+    <string name="absent_num">NÚMERO DE AUSENTE</string>
 
     <string name="voicemail_settings" msgid="2288633492587133022">"Configuración de buzón de voz"</string>
     <string name="voicemail_number_not_set" msgid="1604580506447265808">"&lt;sin definir&gt;"</string>
@@ -873,13 +873,13 @@
     <string name="vibrate_call_waiting">Vibrar en Llamada en Espera</string>
     <string name="vibrate_call_waiting_sum">Vibra al tener una Llamada en Espera</string>
 
-    <string name="noise_suppression_title">Noise suppression</string>
-    <string name="noise_suppression_summary">Enable noise suppression for calls</string>
+    <string name="noise_suppression_title">supresión de ruido</string>
+    <string name="noise_suppression_summary">Habilitar la supresión del ruido para las llamadas</string>
 
     <string name="voice_quality_preferences_title">Voice quality</string>
     <string name="voice_quality_summary">Voice profile is currently set to: %s</string>
     <string name="voice_quality_entry_normal">Normal</string>
-    <string name="voice_quality_entry_clear">Clear</string>
-    <string name="voice_quality_entry_crisp">Crisp</string>
-    <string name="voice_quality_entry_bright">Bright</string>
+    <string name="voice_quality_entry_clear">Borrar</string>
+    <string name="voice_quality_entry_crisp">Crujiente</string>
+    <string name="voice_quality_entry_bright">Brillante</string>
 </resources>
