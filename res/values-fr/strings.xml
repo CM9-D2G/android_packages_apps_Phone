@@ -163,7 +163,7 @@
     <string-array name="clir_values">
         <item><xliff:g>Défaut</xliff:g></item>
         <item><xliff:g>Masquer</xliff:g></item>
-        <item><xliff:g>SHOW</xliff:g></item>
+        <item><xliff:g>MONTRER</xliff:g></item>
     </string-array>
 
     <string name="vm_save_number" msgid="4579969432544566719">"Enregistrer le numéro de messagerie vocale"</string>
