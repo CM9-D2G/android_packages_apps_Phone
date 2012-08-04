@@ -103,7 +103,7 @@
     <string name="voicemail_abbreviated" msgid="2215592488517217448">"Correo de voz:"</string>
 <!-- May Need MSGID added to work in Lang Files and Translation-->
     <string name="mwi_notification_title">Indicador de mensaje de espera</string>
-    <string name="mwi_notification_summary">Mostrar mensajes de correo de voz indicador de espera de las notificaciones/string>
+    <string name="mwi_notification_summary">Mostrar mensajes de correo de voz indicador de espera de las notificaciones</string>
 
     <string name="networks" msgid="8873030692174541976">"Operadores de red"</string>
     <string name="call_settings" msgid="6112441768261754562">"Configuración de llamada"</string>
