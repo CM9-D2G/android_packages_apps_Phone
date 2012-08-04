@@ -865,11 +865,11 @@
 <!-- May Need MSGID added to work in Lang Files -->
     <string name="advanced_setting">Gevorderde instellings</string>
     <string name="vibrate_outgoing">Vibreer op antwoord</string>
-    <string name="vibrate_outgoing_sum">Vibreer wanneer 'n uitgaande oproep beantwoord</string>
+    <string name="vibrate_outgoing_sum">Vibreer wanneer \'n uitgaande oproep beantwoord</string>
     <string name="vibrate_45">Vibreer elke 45 sekondes</string>
     <string name="vibrate_45_sum">Vibreer op die 45 tweede punt van elke minuut gedurende uitgaande oproepe.</string>
     <string name="vibrate_hangup">Vibreer op hangup</string>
-    <string name="vibrate_hangup_sum">Vibreer wanneer 'n oproep ge�indig het</string>
+    <string name="vibrate_hangup_sum">Vibreer wanneer \'n oproep ge�indig het</string>
     <string name="vibrate_call_waiting">Vibreer noem wag</string>
     <string name="vibrate_call_waiting_sum">Vibreer op call waiting</string>
 
