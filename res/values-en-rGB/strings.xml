@@ -14,8 +14,7 @@
      limitations under the License.
  -->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="phoneAppLabel" product="tablet" msgid="8576272342240415145">"Mobile Data"</string>
     <string name="phoneAppLabel" product="default" msgid="906161039445636857">"Phone"</string>
     <string name="emergencyDialerIconLabel" msgid="7812140032168171053">"Emergency Dialler"</string>
@@ -101,6 +100,10 @@
     <string name="settings_label" msgid="3876743539816984008">"Network settings"</string>
     <string name="voicemail" msgid="8693759337917898954">"Voicemail"</string>
     <string name="voicemail_abbreviated" msgid="2215592488517217448">"VM:"</string>
+<!-- May Need MSGID added to work in Lang Files and Translation-->
+    <string name="mwi_notification_title">Message Wait Indicator</string>
+    <string name="mwi_notification_summary">Show message wait indicator voicemail notifications</string>
+
     <string name="networks" msgid="8873030692174541976">"Network operators"</string>
     <string name="call_settings" msgid="6112441768261754562">"Call settings"</string>
     <string name="additional_gsm_call_settings" msgid="1391795981938800617">"Additional settings"</string>
@@ -156,6 +159,13 @@
     <item msgid="7876195870037833661">"Hide number"</item>
     <item msgid="1108394741608734023">"Show number"</item>
   </string-array>
+<!-- May Need MSGID added to work in Lang Files and translation-->
+    <string-array name="clir_values">
+        <item><xliff:g>DEFAULT</xliff:g></item>
+        <item><xliff:g>HIDE</xliff:g></item>
+        <item><xliff:g>SHOW</xliff:g></item>
+    </string-array>
+
     <string name="vm_save_number" msgid="4579969432544566719">"Save voicemail number"</string>
     <string name="vm_changed" msgid="380744030726254139">"Voicemail number changed."</string>
     <string name="vm_change_failed" msgid="6912718596496220653">"Voicemail number change unsuccessful."\n"Please contact your operator if this problem persists."</string>
@@ -191,40 +201,96 @@
     <string name="preferred_network_mode_cdma_only_summary" msgid="1309770926198634150">"Preferred network mode: CDMA only"</string>
     <string name="preferred_network_mode_evdo_only_summary" msgid="8472220691721269155">"Preferred network mode: EvDo only"</string>
     <string name="preferred_network_mode_lte_cdma_summary" msgid="3722647806454528426">"Preferred network mode: LTE/CDMA"</string>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="preferred_network_mode_lte_gsm_summary">Preferred network mode: LTE / WCDMA / GSM</string>
+    <string name="preferred_network_mode_lte_cdma_evdo_summary">Preferred network mode: LTE / CDMA / EvDo</string>
+    <string name="preferred_network_mode_lte_cdma_evdo_gsm_wcdma_summary">Preferred network mode: LTE / CMDA / EvDo / GSM / WCDMA</string>
+<!-- May Need MSGID added to work in Lang Files -->
   <string-array name="preferred_network_mode_choices">
-    <item msgid="5886604709726177211">"LTE/CDMA"</item>
-    <item msgid="3273348576277144124">"EvDo only"</item>
-    <item msgid="454610224530856274">"CDMA w/o EvDo"</item>
-    <item msgid="8928247118825616081">"CDMA/EvDo auto"</item>
-    <item msgid="8595462903294812666">"GSM/WCDMA auto"</item>
-    <item msgid="5189164180446264504">"WCDMA only"</item>
-    <item msgid="5714714953966979187">"GSM only"</item>
-    <item msgid="4775796025725908913">"GSM/WCDMA preferred"</item>
+	<item>LTE ONLY</item>
+	<item>LTE / CMDA / EvDo / GSM / WCDMA</item>
+	<item>LTE / WCDMA / GSM</item>
+	<item>LTE / CDMA / EvDo</item>
+	<item>LTE / CDMA</item>
+	<item>EvDo only</item>
+	<item>CDMA w/o EvDo</item>
+	<item>CDMA / EvDo auto</item>
+	<item>GSM / WCDMA auto</item>
+	<item>WCDMA only</item>
+	<item>GSM only</item>
+	<item>GSM / WCDMA preferred</item>
   </string-array>
-  <string-array name="preferred_network_mode_choices_lte">
-    <item msgid="7345284701413565429">"LTE/CDMA"</item>
-    <item msgid="5541716989029928208">"CDMA"</item>
-  </string-array>
+<!-- More Non-Translatable may need removing in some language Files 
+    <string-array name="preferred_network_mode_values"  translatable="false">
+        <item>"11"</item>
+        <item>"10"</item>
+        <item>"9"</item>
+        <item>"8"</item>
+        <item>"7"</item>
+        <item>"6"</item>
+        <item>"5"</item>
+        <item>"4"</item>
+        <item>"3"</item>
+        <item>"2"</item>
+        <item>"1"</item>
+        <item>"0"</item>
+    </string-array>
+-->
+<!-- May Need MSGID added to work in Lang Files -->
+    <string-array name="preferred_network_mode_choices_lte">
+        <item>LTE ONLY</item>
+        <item>LTE / CMDA / EvDo / GSM / WCDMA</item>
+        <item>LTE / CDMA</item>
+        <item>CDMA</item>
+    </string-array>
+
+<!-- Some of these are Non-Translatable and may need removing in some Lang files 
+    <string-array name="preferred_network_mode_values_lte" translatable="false">
+        <item>"11"</item>
+        <item>"10"</item>
+        <item>"7"</item>
+        <item>"4"</item>
+    </string-array>
+-->
+<!-- May Need MSGID added to work in Lang Files -->
+    <string-array name="preferred_network_mode_choices_lte_gsm">
+        <item>LTE / GSM</item>
+        <item>GSM</item>
+    </string-array>
+<!-- Some of these are Non-Translatable and may need removing in some Lang files 
+    <string-array name="preferred_network_mode_values_lte_gsm" translatable="false">
+        <item>"9"</item>
+        <item>"0"</item>
+    </string-array>
+-->
     <string name="data_enabled" msgid="5972538663568715366">"Data enabled"</string>
     <string name="data_enable_summary" msgid="5022018967714633874">"Enable data access over Mobile network"</string>
     <string name="roaming" msgid="8871412572928323707">"Data roaming"</string>
     <string name="roaming_enable" msgid="7331106985174381987">"Connect to data services when roaming"</string>
     <string name="roaming_disable" msgid="1843417228755568110">"Connect to data services when roaming"</string>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="national_roaming">National data roaming</string>
+    <string name="national_roaming_enable">Connect to data services when nationally roaming </string>
+    <string name="national_roaming_disable">Connect to data services when nationally roaming</string>
+
     <string name="roaming_reenable_message" msgid="6973894869473170666">"You have lost data connectivity because you left your home network with data roaming turned off."</string>
     <string name="roaming_warning" msgid="7820963598559553967">"Allow data roaming? You may incur significant roaming charges!"</string>
     <string name="gsm_umts_options" msgid="6538311689850981686">"GSM/UMTS Options"</string>
     <string name="cdma_options" msgid="4016822858172249884">"CDMA Options"</string>
+
     <string name="throttle_data_usage" msgid="3715677828160555808">"Data usage"</string>
     <string name="throttle_settings_title" msgid="2761975408383706589">"Operator data policy"</string>
     <string name="throttle_current_usage" msgid="8762280193043815361">"Data used in current period"</string>
     <string name="throttle_time_frame" msgid="1915198770363734685">"Data usage period"</string>
     <string name="throttle_rate" msgid="4710388992676803508">"Data rate policy"</string>
     <string name="throttle_help" msgid="243651091785169900">"Learn more"</string>
+
     <string name="throttle_status_subtext" msgid="1657318943142085170">"<xliff:g id="USED_0">%1$s</xliff:g> (<xliff:g id="USED_1">%2$d</xliff:g>٪) of <xliff:g id="USED_2">%3$s</xliff:g> period maximum"\n"Next period starts in <xliff:g id="USED_3">%4$d</xliff:g> days (<xliff:g id="USED_4">%5$s</xliff:g>)"</string>
     <string name="throttle_data_usage_subtext" msgid="6029276011123694701">"<xliff:g id="USED_0">%1$s</xliff:g> (<xliff:g id="USED_1">%2$d</xliff:g>٪) of <xliff:g id="USED_2">%3$s</xliff:g> period maximum"</string>
     <string name="throttle_data_rate_reduced_subtext" msgid="7492763592720107737">"<xliff:g id="USED_0">%1$s</xliff:g> maximum exceeded"\n"Data rate reduced to <xliff:g id="USED_1">%2$d</xliff:g> Kb/s"</string>
     <string name="throttle_time_frame_subtext" msgid="7732763021560399960">"<xliff:g id="USED_0">%1$d</xliff:g>٪ of cycle elapsed"\n"Next period starts in <xliff:g id="USED_1">%2$d</xliff:g> days (<xliff:g id="USED_2">%3$s</xliff:g>)"</string>
     <string name="throttle_rate_subtext" msgid="2149102656120726855">"Data rate reduced to <xliff:g id="USED">%1$d</xliff:g> Kb/s if data usage limit is exceeded"</string>
+
     <string name="throttle_help_subtext" msgid="5217706521499010816">"More information about your operator\'s mobile network data usage policy"</string>
     <string name="cdma_cell_broadcast_sms" msgid="7898475142527341808">"Mobile Broadcast SMS"</string>
     <string name="cell_broadcast_sms" msgid="5584192824053625842">"Mobile Broadcast SMS"</string>
@@ -314,6 +380,7 @@
     <string name="enable_disable_multi_category" msgid="626771003122899280">"Multi-category"</string>
     <string name="multi_category_enable" msgid="1179299804641721768">"Multi-category enabled"</string>
     <string name="multi_category_disable" msgid="880104702904139505">"Multi-category disabled"</string>
+    <!-- GSM/UMTS Options strings -->
     <string name="gsm_umts_network_preferences_title" msgid="4834419333547382436">"GSM/UMTS Network Preferences"</string>
     <string name="gsm_umts_network_preferneces_summary" msgid="1905018644156819521">"Not implemented yet!"</string>
     <string name="gsm_umts_network_preferences_dialogtitle" msgid="6356332580813229898">"GSM/UMTS network preferences"</string>
@@ -329,6 +396,7 @@
     <item msgid="1268081943590316978">"2"</item>
     <item msgid="4469871047641902607">"3"</item>
   </string-array>
+
     <string name="prefer_2g" msgid="8442550937280449639">"Use only 2G networks"</string>
     <string name="prefer_2g_summary" msgid="1976491403210690759">"Saves battery"</string>
     <string name="cdma_system_select_title" msgid="5757657769327732833">"System select"</string>
@@ -338,6 +406,13 @@
     <item msgid="176474317493999285">"Home only"</item>
     <item msgid="1205664026446156265">"Automatic"</item>
   </string-array>
+<!-- More Non-Translatable may need removing in some language Files 
+    <string-array name="cdma_system_select_values" translatable="false">
+        <item>"0"</item>
+        <item>"2"</item>
+    </string-array>
+-->
+    <!-- CDMA Options strings -->
     <string name="cdma_roaming_mode_title" msgid="6366737033053855198">"CDMA Roaming Mode"</string>
     <string name="cdma_roaming_mode_summary" msgid="8604713111805562261">"Change the CDMA roaming mode"</string>
     <string name="cdma_roaming_mode_dialogtitle" msgid="1802896889172094947">"CDMA roaming mode"</string>
@@ -453,6 +528,11 @@
     <string name="doneButton" msgid="2859593360997984240">"Done"</string>
     <string name="caller_manage_header" msgid="3231519674734638786">"Conference call <xliff:g id="CONF_CALL_TIME">%s</xliff:g>"</string>
     <string name="caller_manage_manage_done_text" msgid="8093934725536733856">"Back to call"</string>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="fake_phone_activity_phoneNumber_text">(650) 555-1234</string>
+    <string name="fake_phone_activity_infoText_text">Incoming phone number</string>
+    <string name="fake_phone_activity_placeCall_text">Fake Incoming Call</string>
+
     <string name="sim_missing_continueView_text" msgid="4199689081742026077">"Continue without SIM card"</string>
     <string name="sim_missing_msg_text" msgid="6803619600564142188">"No SIM card found. Please insert a SIM card into the phone."</string>
     <string name="sim_unlock_dismiss_text" msgid="8292343981739813597">"Dismiss"</string>
@@ -530,6 +610,14 @@
     <item msgid="1937509904407445684">"TTY HCO"</item>
     <item msgid="5644925873488772224">"TTY VCO"</item>
   </string-array>
+<!-- More Non-Translatable may need removing in some language Files 
+    <string-array name="tty_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+-->
     <string name="eri_text_label" msgid="4326942349915331461">"ERI text"</string>
     <string name="dtmf_tones_title" msgid="3866923093113274152">"DTMF Tones"</string>
     <string name="dtmf_tones_summary" msgid="3351820372864020331">"Set the length of DTMF tones"</string>
@@ -537,6 +625,12 @@
     <item msgid="899650777817315681">"Normal"</item>
     <item msgid="2883365539347850535">"Long"</item>
   </string-array>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string-array name="dtmf_tone_values">
+       <item>0</item>
+       <item>1</item>
+    </string-array>
+
     <string name="network_message" msgid="5673682885938122239">"Network Message"</string>
     <string name="ota_title_activate" msgid="8616918561356194398">"Activate your phone"</string>
     <string name="ota_touch_activate" msgid="6553212803262586244">"A special call needs to be made to activate your phone service. "\n\n"After pressing “Activate”, listen to the instructions provided to activate your phone."</string>
@@ -560,6 +654,8 @@
     <string name="ota_try_again" msgid="7685477206465902290">"Try again"</string>
     <string name="ota_next" msgid="3904945374358235910">"Next"</string>
     <string name="ota_back" msgid="2190038043403850052">"Back"</string>
+
+    <!-- Emergency Callback Mode (ECM) -->
     <string name="ecm_exit_dialog" msgid="4448531867763097533">"EcmExitDialog"</string>
     <string name="phone_entered_ecm_text" msgid="6266424252578731203">"Entered Emergency Callback Mode"</string>
     <string name="phone_in_ecm_notification_title" msgid="3226896828951687085">"Emergency Callback Mode"</string>
@@ -581,12 +677,19 @@
     <string name="alert_dialog_yes" msgid="6674268047820703974">"Yes"</string>
     <string name="alert_dialog_no" msgid="1476091437797628703">"No"</string>
     <string name="alert_dialog_dismiss" msgid="2491494287075907171">"Dismiss"</string>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="absent_num">ABSENT NUMBER</string>
+
     <string name="voicemail_settings" msgid="2288633492587133022">"Voicemail settings"</string>
     <string name="voicemail_number_not_set" msgid="1604580506447265808">"&lt;not set&gt;"</string>
     <string name="voicemail_provider" msgid="6299679757491942924">"Voicemail service"</string>
     <string name="voicemail_settings_for" msgid="9018656268027893088">"Settings for <xliff:g id="PROVIDER_NAME">%s</xliff:g>"</string>
     <string name="other_settings" msgid="3672912580359716394">"Other call settings"</string>
     <string name="dial_button_label" msgid="5551611636419190229">"Dial"</string>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="dialer_ui_settings_title">Dialpad settings</string>
+    <string name="dialer_ui_settings_summary">Settings for the dialpad</string>
+
     <string name="calling_via_template" msgid="7374498518104190489">"Calling via ^1"\n<b>"^2"</b></string>
     <string name="slide_to_answer" msgid="255903188611244476">"Drag right to answer"</string>
     <string name="slide_to_silence" msgid="2224982696981131553">"Drag left to silence ringer"</string>
@@ -599,6 +702,10 @@
     <string name="contactPhoto" msgid="4713193418046639466">"contact photo"</string>
     <string name="goPrivate" msgid="865837794424530980">"go private"</string>
     <string name="selectContact" msgid="781975788478987237">"select contact"</string>
+
+
+    <!-- Start of SIP related strings defined from here. -->
+
     <string name="sip_settings" msgid="6699045718560859691">"Internet call settings"</string>
     <string name="sip_accounts" msgid="2097054001288457163">"Internet calling (SIP) accounts"</string>
     <string name="sip_accounts_title" msgid="1212889069281054570">"Accounts"</string>
@@ -671,6 +778,10 @@
     <string name="default_preference_summary" msgid="868766740121667450">"&lt;Not set&gt;"</string>
     <string name="display_name_summary" msgid="8636377460518225523">"&lt;Same as username&gt;"</string>
     <string name="optional_summary" msgid="1464058793789832411">"&lt;Optional&gt;"</string>
+<!-- More Non-Translatable may need removing in some language Files 
+    <string translatable="false" name="default_port">5060</string>
+    <string translatable="false" name="default_transport">UDP</string>
+-->
     <string name="advanced_settings_show" msgid="4668880308290857597">"▷ Touch to show all"</string>
     <string name="advanced_settings_hide" msgid="217398292824758079">"▽ Touch to hide all"</string>
     <string name="empty_alert" msgid="8177828109581557940">"<xliff:g id="INPUT_FIELD_NAME">%s</xliff:g> is required; cannot be left blank"</string>
@@ -682,6 +793,23 @@
     <string name="no_voip" msgid="8901474054537199865">"Internet calling not supported"</string>
     <string name="sip_system_decide" msgid="368030746310423471">"Automatic"</string>
     <string name="sip_always_send_keepalive" msgid="8192080724632877132">"Always send"</string>
+<!-- More Non-Translatable may need removing in some language Files 
+    <string translatable="false" name="sip_always">SIP_ALWAYS</string>
+    <string translatable="false" name="sip_address_only">SIP_ADDRESS_ONLY</string>
+    <string translatable="false" name="sip_ask_me_each_time">SIP_ASK_ME_EACH_TIME</string>
+    <string translatable="false" name="domain_address">SipDomain</string>
+    <string translatable="false" name="username">UserName</string>
+    <string translatable="false" name="password">Password</string>
+    <string translatable="false" name="display_name">DisplayName</string>
+    <string translatable="false" name="proxy_address">ProxyAddress</string>
+    <string translatable="false" name="port">Port</string>
+    <string translatable="false" name="transport">Protocol</string>
+    <string translatable="false" name="send_keepalive">SendKeepAlive</string>
+    <string translatable="false" name="auto_registration">AutoRegistration</string>
+    <string translatable="false" name="set_primary">SetPrimary</string>
+    <string translatable="false" name="advanced_settings_container">advanced settings container</string>
+    <string translatable="false" name="auth_username">AuthUserName</string>
+-->
     <string name="not_voice_capable" msgid="2739898841461577811">"Voice calling not supported"</string>
     <string name="respond_via_sms_canned_response_1" msgid="2461606462788380215">"Can\'t talk now. What\'s up?"</string>
     <string name="respond_via_sms_canned_response_2" msgid="4074450431532859214">"I\'ll call you right back."</string>
@@ -713,6 +841,12 @@
     <string name="description_target_answer" msgid="7205604197797472471">"Answer"</string>
     <string name="description_target_send_sms" msgid="2098326025587950144">"Send SMS"</string>
     <string name="description_target_decline" msgid="4789834364389731957">"Decline"</string>
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="perm_change_mobile_network">Change network (2G/3G)</string>
+    <string name="perm_change_mobile_network_desc">Application with this permission can, at any time, change between 2G data and 3G data. 3G is faster, consumes more battery, and can also cost you more money.</string>
+
+    <string name="phone_number_label">My phone number</string>
+    <string name="phone_number_summary">Set the phone number for this device</string>
     <string name="voicemail_notification_vibrate_when_title" msgid="8361970092063604886">"Vibrate"</string>
     <string name="voicemail_notification_vibarte_when_dialog_title" msgid="5739583146522136440">"Vibrate"</string>
   <string-array name="voicemail_notification_vibrate_when_entries">
@@ -720,4 +854,32 @@
     <item msgid="1595097872875714252">"Only when silent"</item>
     <item msgid="1458182414036878616">"Never"</item>
   </string-array>
+<!-- More Non-Translatable may need removing in some language Files -->
+    <string name="voicemail_notification_vibrate_when_default" translatable="false">never</string>
+    <string-array name="voicemail_notification_vibrate_when_values" translatable="false">
+        <item>always</item>
+        <item>silent</item>
+        <item>never</item>
+    </string-array>
+
+<!-- May Need MSGID added to work in Lang Files -->
+    <string name="advanced_setting">Advanced Settings</string>
+    <string name="vibrate_outgoing">Vibrate on answer</string>
+    <string name="vibrate_outgoing_sum">Vibrate when an outgoing call is answered</string>
+    <string name="vibrate_45">Vibrate every 45 seconds</string>
+    <string name="vibrate_45_sum">Vibrates at the 45 second mark of every minute during outgoing calls</string>
+    <string name="vibrate_hangup">Vibrate on hangup</string>
+    <string name="vibrate_hangup_sum">Vibrate when a call has ended</string>
+    <string name="vibrate_call_waiting">Vibrate call waiting</string>
+    <string name="vibrate_call_waiting_sum">Vibrate on call waiting</string>
+
+    <string name="noise_suppression_title">Noise suppression</string>
+    <string name="noise_suppression_summary">Enable noise suppression for calls</string>
+
+    <string name="voice_quality_preferences_title">Voice quality</string>
+    <string name="voice_quality_summary">Voice profile is currently set to: %s</string>
+    <string name="voice_quality_entry_normal">Normal</string>
+    <string name="voice_quality_entry_clear">Clear</string>
+    <string name="voice_quality_entry_crisp">Crisp</string>
+    <string name="voice_quality_entry_bright">Bright</string>
 </resources>
