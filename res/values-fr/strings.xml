@@ -101,8 +101,8 @@
     <string name="voicemail" msgid="8693759337917898954">"Messagerie vocale"</string>
     <string name="voicemail_abbreviated" msgid="2215592488517217448">"MV :"</string>
 <!-- May Need MSGID added to work in Lang Files and Translation-->
-    <string name="mwi_notification_title">Indicateur d'attente des messages</string>
-    <string name="mwi_notification_summary">Afficher un message d'attente des notifications de messagerie vocale indicateurs</string>
+    <string name="mwi_notification_title">Indicateur d\'attente des messages</string>
+    <string name="mwi_notification_summary">Afficher un message d\'attente des notifications de messagerie vocale indicateurs</string>
 
     <string name="networks" msgid="8873030692174541976">"Opérateur de réseau"</string>
     <string name="call_settings" msgid="6112441768261754562">"Paramètres d\'appel"</string>
@@ -678,7 +678,7 @@
     <string name="alert_dialog_no" msgid="1476091437797628703">"Non"</string>
     <string name="alert_dialog_dismiss" msgid="2491494287075907171">"Ignorer"</string>
 <!-- May Need MSGID added to work in Lang Files -->
-    <string name="absent_num">Nombre d'absents</string>
+    <string name="absent_num">Nombre d\'absents</string>
 
     <string name="voicemail_settings" msgid="2288633492587133022">"Messagerie vocale"</string>
     <string name="voicemail_number_not_set" msgid="1604580506447265808">"&lt;non défini&gt;"</string>
@@ -843,7 +843,7 @@
     <string name="description_target_decline" msgid="4789834364389731957">"Refuser"</string>
 <!-- May Need MSGID added to work in Lang Files -->
     <string name="perm_change_mobile_network">changer de réseau (2G/3G)</string>
-    <string name="perm_change_mobile_network_desc">Application avec cette autorisation peut, à tout moment, le changement entre les données 2G et 3G de données. 3G est plus rapide, consomme plus de batterie, et peut aussi vous coûter plus d'argent.</string>
+    <string name="perm_change_mobile_network_desc">Application avec cette autorisation peut, à tout moment, le changement entre les données 2G et 3G de données. 3G est plus rapide, consomme plus de batterie, et peut aussi vous coûter plus d\'argent.</string>
 
     <string name="phone_number_label">"Mon numéro de téléphone"</string>
     <string name="phone_number_summary">"Régler le numéro d\'appel de ce téléphone"</string>
